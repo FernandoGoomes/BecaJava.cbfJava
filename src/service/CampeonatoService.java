@@ -1,19 +1,19 @@
 package service;
-
 import model.Campeonato;
 import repository.CampeonatoRepository;
 
 public class CampeonatoService {
 	
+	CampeonatoRepository Campeonato = new CampeonatoRepository();
 	
 	public Campeonato getCampeonato() {
-		CampeonatoRepository repository = new CampeonatoRepository();
-		return repository.getCampeonato();
+		return Campeonato.getCampeonato();
+		
 	}
 	
-	
-	public void setCampeonato(Campeonato campeonato) {
-		CampeonatoRepository repository = new CampeonatoRepository();
-		repository.setCampeonato(campeonato);
+	public void setCampeonato() {
+		Campeonato.setCampeonato();
+		
 	}
+	
 }

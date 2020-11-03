@@ -1,15 +1,13 @@
 package model;
 
 public class Torcedor {
-
-	public int Id;
+	public int Int;
 	public String Nome;
-	
-	public int getId() {
-		return Id;
+	public int getInt() {
+		return Int;
 	}
-	public void setId(int id) {
-		Id = id;
+	public void setInt(int i) {
+		Int = i;
 	}
 	public String getNome() {
 		return Nome;
@@ -17,6 +15,5 @@ public class Torcedor {
 	public void setNome(String nome) {
 		Nome = nome;
 	}
-	
 	
 }

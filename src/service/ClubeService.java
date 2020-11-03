@@ -1,19 +1,19 @@
 package service;
-
 import model.Clube;
 import repository.ClubeRepository;
 
 public class ClubeService {
 	
+	ClubeRepository Clube = new ClubeRepository();
 	
-	public Clube getPosicao() {
-		ClubeRepository repository = new ClubeRepository();
-		return repository.getClube();
+	public Clube getCampeonato() {
+		return Clube.getClube();
+		
 	}
 	
-	
-	public void setPosicao(Clube clube) {
-		ClubeRepository repository = new ClubeRepository();
-		repository.setClube(clube);
+	public void setCampeonato() {
+		Clube.setClube();
+		
 	}
+
 }

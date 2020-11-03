@@ -1,19 +1,18 @@
 package service;
-
 import model.Ingresso;
 import repository.IngressoRepository;
 
 public class IngressoService {
 	
+	IngressoRepository Ingresso = new IngressoRepository();
 	
 	public Ingresso getIngresso() {
-		IngressoRepository repository = new IngressoRepository();
-		return repository.getIngresso();
+		return Ingresso.getIngresso();
+		
 	}
 	
-	
-	public void setIngresso(Ingresso ingresso) {
-		IngressoRepository repository = new IngressoRepository();
-		repository.setIngresso(ingresso);
+	public void setIngresso() {
+		Ingresso.setIngresso();
 	}
+
 }

@@ -1,19 +1,17 @@
 package service;
-
 import model.Posicao;
 import repository.PosicaoRepository;
 
 public class PosicaoService {
 	
+	PosicaoRepository Posicao = new PosicaoRepository();
+	
 	public Posicao getPosicao() {
-	PosicaoRepository repository = new PosicaoRepository();
-	return repository.getPosicao();
-		
+		return Posicao.getPosicao();
 	}
-
-	public void setPosicao(Posicao posicao) {
-		PosicaoRepository repository = new PosicaoRepository();
-		repository.setPosicao(posicao);
+	
+	public void setPosicao() {
+		Posicao.setPosicao();
 	}
 
 }

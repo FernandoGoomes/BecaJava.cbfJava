@@ -1,20 +1,16 @@
 package service;
-
 import model.Torcedor;
 import repository.TorcedorRepository;
 
 public class TorcedorService {
 	
+	TorcedorRepository Torcedor = new TorcedorRepository();
 	
 	public Torcedor getTorcedor() {
-		TorcedorRepository repository = new TorcedorRepository();
-		return repository.getTorcedor();
+		return Torcedor.getTorcedor();
 	}
 	
-	
-	public void setTorcedor(Torcedor torcedor) {
-		TorcedorRepository repository = new TorcedorRepository();
-		repository.setTorcedor(torcedor);
+	public void setTorcedor() {
+		Torcedor.setTorcedor();
 	}
-	
 }

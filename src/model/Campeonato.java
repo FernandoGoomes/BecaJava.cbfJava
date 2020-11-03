@@ -1,10 +1,8 @@
 package model;
 
 public class Campeonato {
-	
 	public int Id;
 	public String Nome;
-	
 	public int getId() {
 		return Id;
 	}
@@ -19,5 +17,6 @@ public class Campeonato {
 	}
 	
 	
-
 }
+
+

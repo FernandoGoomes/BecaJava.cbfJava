@@ -6,10 +6,10 @@ public class PosicaoRepository {
 	
 	public Posicao getPosicao() {
 		return new Posicao();
+	}
+	
+	public void setPosicao() {
 		
 	}
 
-	public void setPosicao(Posicao posicao) {
-		
-	}
 }

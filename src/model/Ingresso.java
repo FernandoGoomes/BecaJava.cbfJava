@@ -1,11 +1,8 @@
 package model;
 
 public class Ingresso {
-	
 	public int PartidaId;
 	public int TorcedorId;
-	
-	
 	public int getPartidaId() {
 		return PartidaId;
 	}
@@ -20,5 +17,4 @@ public class Ingresso {
 	}
 	
 	
-
 }

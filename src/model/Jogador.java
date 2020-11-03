@@ -1,12 +1,10 @@
 package model;
 
 public class Jogador {
-	
 	public int Id;
 	public String Nome;
 	public int ClubeId;
 	public int PosicaoId;
-	
 	public int getId() {
 		return Id;
 	}
@@ -31,6 +29,6 @@ public class Jogador {
 	public void setPosicaoId(int posicaoId) {
 		PosicaoId = posicaoId;
 	}
-
+	
 	
 }

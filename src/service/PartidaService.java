@@ -1,19 +1,17 @@
 package service;
-
 import model.Partida;
 import repository.PartidaRepository;
 
 public class PartidaService {
 	
+	PartidaRepository Partida = new PartidaRepository();
+	
 	public Partida getPartida() {
-		PartidaRepository repository = new PartidaRepository();
-		return repository.getPartida();
+		return Partida.getPartida();
 	}
 	
-	
-	public void setPartida(Partida partida) {
-		PartidaRepository repository = new PartidaRepository();
-		repository.setPartida(partida);
+	public void setPartida() {
+		Partida.setPartida();
 	}
 
 }
